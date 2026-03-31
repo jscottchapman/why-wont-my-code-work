@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Won't My Code Work? | Scott Chapman — Product Partner for Stuck Builders</title>
+  <meta name="description" content="Vibe-coded yourself into a corner? Scott Chapman has shipped 30+ products across 10+ tech stacks. He'll get your project unstuck and shipping.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- GLITCH INTRO OVERLAY -->
+  <div id="glitch-overlay">
+    <canvas id="matrix-canvas"></canvas>
+    <div id="error-messages">
+      <div class="error-msg">TypeError: undefined is not a function</div>
+      <div class="error-msg">FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed</div>
+      <div class="error-msg">Error: ENOENT: no such file or directory</div>
+      <div class="error-msg">SyntaxError: Unexpected token '&lt;'</div>
+      <div class="error-msg">Module not found: Can't resolve './components/App'</div>
+      <div class="error-msg">ERR_CONNECTION_REFUSED at localhost:3000</div>
+      <div class="error-msg">CORS policy: No 'Access-Control-Allow-Origin'</div>
+      <div class="error-msg">Maximum call stack size exceeded</div>
+      <div class="error-msg">Hydration failed because the initial UI does not match</div>
+      <div class="error-msg">Cannot read properties of null (reading 'map')</div>
+    </div>
+    <div id="glitch-title">
+      <span class="glitch-text" data-text="Why Won't My Code Work?">Why Won't My Code Work?</span>
+    </div>
+  </div>
+
+  <!-- MAIN SITE (hidden during glitch) -->
+  <div id="main-site" class="hidden">
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-inner">
+        <a href="#" class="logo">~/wwmcw<span class="cursor-blink">_</span></a>
+        <div class="nav-links">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#proof">Proof</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-cta">Get Unstuck</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-badge">For builders who got stuck mid-build</div>
+        <h1>You built something amazing.<br><span class="highlight">Then it stopped working.</span></h1>
+        <p class="hero-sub">You used AI to build fast. Now nothing deploys, errors make no sense, and you're mass-pasting into ChatGPT at 2am. <strong>I've shipped 30+ products across 10+ tech stacks.</strong> Let's get yours across the finish line.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a Session</a>
+          <a href="#how-it-works" class="btn btn-ghost">See How It Works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Products Shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Tech Stacks</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN POINTS -->
+    <section id="pain-points">
+      <div class="container">
+        <h2>Sound familiar?</h2>
+        <div class="pain-grid">
+          <div class="pain-card">
+            <div class="pain-icon">
+              <pre class="terminal-icon">$ npm run build
+<span class="error-text">ERROR</span> Module not found</pre>
+            </div>
+            <h3>It worked on my machine</h3>
+            <p>Your app runs locally but the moment you deploy, everything falls apart. Vercel shows red. Netlify times out. You have no idea what's different.</p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">
+              <pre class="terminal-icon">$ git log --oneline
+<span class="warn-text">47 commits</span> "fix"
+<span class="warn-text">23 commits</span> "try again"</pre>
+            </div>
+            <h3>Commit message: "please work"</h3>
+            <p>You've been pasting errors back into the AI for hours. Each "fix" creates two new problems. The codebase has grown beyond what you can reason about.</p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">
+              <pre class="terminal-icon">client said:
+  "can we launch friday?"
+you said:
+  <span class="error-text">"..."</span></pre>
+            </div>
+            <h3>The deadline already passed</h3>
+            <p>You promised something that seemed possible with AI tools. Now you're stuck, the client is waiting, and you need someone who can actually ship it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works">
+      <div class="container">
+        <h2>From stuck to shipped</h2>
+        <p class="section-sub">Three steps. No judgment. Just results.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h3>Show me the mess</h3>
+            <p>Book a session. Share your repo, your errors, your deploy logs. I've seen it all: broken builds, spaghetti state management, auth loops, database migrations gone wrong. Nothing shocks me.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h3>I diagnose the real problem</h3>
+            <p>Most "bugs" are architecture problems. I'll trace your code from entry point to failure, identify what's actually broken (not what the error message says), and map out exactly what needs to change.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h3>We ship it together</h3>
+            <p>I don't just hand you a list of problems. We fix it live, pair-programming style. You watch, you learn, and when we're done, your app works and you understand why.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF / CASE STUDIES -->
+    <section id="proof">
+      <div class="container">
+        <h2>Real problems. Real fixes.</h2>
+        <p class="section-sub">A few of the 30+ products I've taken from broken to shipped.</p>
+        <div class="case-studies">
+          <div class="case-card">
+            <div class="case-tag">Education Platform</div>
+            <h3>Doubled student engagement for a training company</h3>
+            <p>A client had students falling off between assessments. I built an automated SMS engagement system that tracked progress and sent targeted messages. <strong>Result: 2x engagement</strong>, 98%+ delivery rate, thousands of messages across multiple cohorts.</p>
+            <div class="case-stack">Next.js / PostgreSQL / Twilio / Stripe / Auth0</div>
+            <blockquote>"Scott has a rare ability to bridge the gap between an idea and the final product."</blockquote>
+          </div>
+          <div class="case-card">
+            <div class="case-tag">Healthcare Platform</div>
+            <h3>Built a HIPAA-compliant physical therapy platform from scratch</h3>
+            <p>Sole developer on a platform with 850+ 3D exercise visualizations, real-time progress tracking, patient messaging, and therapist dashboards. Replaced static 2D exercise instructions with interactive motion capture.</p>
+            <div class="case-stack">React / Node.js / Three.js / PostgreSQL / AWS</div>
+          </div>
+          <div class="case-card">
+            <div class="case-tag">Medical Devices</div>
+            <h3>Connected wearable sensors to clinician dashboards</h3>
+            <p>Built the complete data pipeline for a continuous glucose monitor: BLE data from wearable sensor to cloud ingestion to physician-facing clinical visualization. Device-to-doctor, end to end.</p>
+            <div class="case-stack">BLE / Cloud APIs / Clinical Visualization / Real-time Data</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>I'm Scott Chapman.</h2>
+            <p>Product manager and technical consultant with 20+ years of experience. I've been a JavaScript instructor, a conference speaker, and the sole developer on healthcare platforms where code failures have real consequences.</p>
+            <p>I'm not here to judge your vibe-coded project. I've used Claude Code to build production apps myself. I know exactly where AI-assisted development shines and where it falls apart. That's why I built this service.</p>
+            <p><strong>I'm a product partner, not just a developer.</strong> I don't just fix the bug. I help you understand why it broke, how to prevent it next time, and how to think about your project architecturally so the AI tools work <em>with</em> you instead of against you.</p>
+            <div class="about-creds">
+              <span>Ravenview Services (2016-present)</span>
+              <span>Big Sky Code Academy Instructor</span>
+              <span>Montana Code Girls Volunteer</span>
+              <span>Conference Speaker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="container">
+        <h2>Simple, honest pricing</h2>
+        <p class="section-sub">No subscriptions. No retainer required to start. Just help when you need it.</p>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-name">Diagnostic Session</div>
+            <div class="price-amount">$125<span>/hour</span></div>
+            <p>Share your screen. I'll trace the problem, explain what's wrong, and map out what needs to change. Most issues are diagnosed in the first hour.</p>
+            <ul>
+              <li>Live screen-share debugging</li>
+              <li>Root cause analysis</li>
+              <li>Written summary of findings</li>
+              <li>1 hour minimum</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Book a Session</a>
+          </div>
+          <div class="price-card featured">
+            <div class="price-badge">Most Popular</div>
+            <div class="price-name">Ship It Session</div>
+            <div class="price-amount">$125<span>/hour</span></div>
+            <p>We don't just find the problem. We fix it together, pair-programming style. You leave with working code and understanding of what changed.</p>
+            <ul>
+              <li>Everything in Diagnostic</li>
+              <li>Pair programming to fix issues</li>
+              <li>Architecture recommendations</li>
+              <li>2-4 hour sessions typical</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Book a Session</a>
+          </div>
+          <div class="price-card">
+            <div class="price-name">On-Call Partner</div>
+            <div class="price-amount">$2,000+<span>/month</span></div>
+            <p>For teams that need ongoing support. Priority response, regular check-ins, and a technical partner who knows your codebase inside and out.</p>
+            <ul>
+              <li>Priority scheduling</li>
+              <li>Ongoing architecture support</li>
+              <li>Code review and deployment help</li>
+              <li>Custom scope and pricing</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-block">
+          <h2>Ready to get unstuck?</h2>
+          <p>Send me your repo link, a description of what's broken, and when you're free. I'll get back to you within 24 hours.</p>
+          <div class="contact-methods">
+            <a href="mailto:scott@ravenviewservices.com" class="btn btn-primary btn-lg">scott@ravenviewservices.com</a>
+          </div>
+          <p class="contact-note">Or just tell me what's broken. No pitch deck required.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-logo">~/wwmcw</span>
+          <span class="footer-copy">&copy; 2026 Ravenview Services. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
