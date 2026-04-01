@@ -1,0 +1,31 @@
+# Why Doesn't My Code Work?
+
+> Freelance debugging and consulting service for AI-assisted builders (vibe-coders) who are stuck mid-build.
+
+## About
+- Founder: J Scott Chapman, 10+ years experience, 30+ products shipped across multiple tech stacks
+- Company: Ravenview Services (2016-present), based in Missoula, MT
+- Specialties: Debugging AI-generated code, deployment issues, architecture problems, pair programming
+
+## Services
+- [Diagnostic Session](https://whydoesntmycodework.com/#pricing): $125/hr — live screen-share debugging with root cause analysis
+- [Ship It Session](https://whydoesntmycodework.com/#pricing): $125/hr — pair programming to fix issues together
+- [On-Call Partner](https://whydoesntmycodework.com/#pricing): $2,000+/month — ongoing technical support and architecture guidance
+
+## Case Studies
+- [Education Platform](https://whydoesntmycodework.com/#proof): Automated SMS engagement system, 2x student engagement, 98%+ delivery rate
+- [Healthcare Platform](https://whydoesntmycodework.com/#proof): HIPAA-compliant PT platform, 850+ 3D exercise visualizations, sole developer
+- [Medical Devices](https://whydoesntmycodework.com/#proof): BLE continuous glucose monitor data pipeline, device-to-doctor
+
+## Key Facts
+- Founded in 2016 by J Scott Chapman
+- Based in Missoula, Montana (serves clients worldwide)
+- 30+ products shipped across multiple tech stacks
+- Specializes in helping vibe-coders get unstuck
+
+## Contact
+- Website: https://whydoesntmycodework.com
+- Booking: https://timetuna.com/j-scott-chapman-2026
+- GitHub: https://github.com/jscottchapman
+- LinkedIn: https://linkedin.com/in/rvnvw
+- X: https://x.com/thescottsy

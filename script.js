@@ -58,14 +58,14 @@
   });
 
   /* ===== TRANSITION: GLITCH -> MAIN SITE ===== */
-  const GLITCH_DURATION = 4000; // 4 seconds of glitch
+  const GLITCH_DURATION = 2000; // 2 seconds of glitch
 
   setTimeout(() => {
     const overlay = document.getElementById('glitch-overlay');
     const mainSite = document.getElementById('main-site');
 
     overlay.classList.add('fade-out');
-    mainSite.classList.remove('hidden');
+    mainSite.classList.remove('behind-overlay');
 
     setTimeout(() => {
       clearInterval(matrixInterval);
@@ -75,7 +75,7 @@
 
   /* ===== SCROLL FADE-IN ===== */
   const fadeTargets = document.querySelectorAll(
-    '.pain-card, .step, .case-card, .price-card, .about-text, .contact-block, .hero-badge, .hero-stats .stat'
+    '.pain-card, .step, .case-card, .price-card, .about-text, .contact-block, .hero-badge, .hero-stats .stat, .faq-item'
   );
   fadeTargets.forEach(el => el.classList.add('fade-in'));
 
